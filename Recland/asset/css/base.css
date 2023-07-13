@@ -1,0 +1,99 @@
+:root {
+  --primary: #021a84;
+  --secondary: #fe4c4c;
+  --text: #171717;
+  --background: #F2F2F2;
+  --white-text: #ffffff;
+  --green-text: #2ada66;
+  --purple-text: #021a84;
+  --red-text: #e5532a;
+  --gray: #999999;
+  --light-gray: #f2f2f2;
+  --green-gradient: linear-gradient(0deg, #fff 0%, #fff 100%), #2ada66;
+  --purple-gradient: linear-gradient(0deg, #fff 0%, #fff 100%), #021a84;
+  --red-gradient: linear-gradient(0deg, #fff 0%, #fff 100%), #e5532a;
+  --border: #021a84;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: var(--background);
+}
+
+.wrapper {
+  max-width: 1160px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/*Button*/
+.btn {
+  height: 44px;
+  min-width: 149px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text);
+}
+
+.btn--border {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--primary);
+}
+
+.btn--solid {
+  border-radius: 8px;
+  color: var(--white-text);
+  background-color: var(--primary);
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.btn--solid:hover::before {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn--solid::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  opacity: 0.1;
+  z-index: -1;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*Button*/
+.heading {
+  color: var(--primary);
+  font-size: 34px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.heading-small {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
