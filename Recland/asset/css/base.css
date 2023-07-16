@@ -97,3 +97,19 @@ body {
   font-weight: 500;
   line-height: 28px;
 }
+
+.btn-scrollTop {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: inline-flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 10px;
+  position: fixed;
+  z-index: 9999;
+  right: 40px;
+  bottom: 40px;
+
+}
